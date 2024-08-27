@@ -1,6 +1,6 @@
 # ¡Hola, bienvenido a mi primer desafio!
 
-<h1>Encriptador de mensaje</h1>
+<h1 align="center">Encriptador de texto</h1>
 
 ![Descripción de la imagen](https://github.com/Ben-JT/imagenes-en-linea/blob/main/desafio1.jpeg?raw=true)
 
