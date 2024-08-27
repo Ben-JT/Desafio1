@@ -1,7 +1,8 @@
 # ¡Hola, bienvenido a mi primer desafio!
 
 <h1>Encriptador de mensaje</h1>
-![imagen](https://github.com/Ben-JT/imagenes-en-linea/blob/main/desafio1.jpeg?raw=true)
+
+![Descripción de la imagen](https://github.com/Ben-JT/imagenes-en-linea/blob/main/desafio1.jpeg?raw=true)
 
 ## Herramientas utilizadas:
 
