@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image" href="./imagenes/alura.ico">
+</head>
+<body>
+    <header>
+        <a href="#" class="titulo__elementos">
+            <img class="logo" src="imagenes/Logo.svg" alt="Logo de Alura">
+            <h1 class="titulo__texto">Encriptador de texto</h1>
+        </a>
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptador__texto" placeholder="Ingrese el texto aquí" ></textarea>
+            <div class="encriptador__aviso">
+                <img src="./imagenes/Group.svg" class="imagen__aviso" alt="Imagen de aviso">
+                <span class="texto__aviso">Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="encriptador__btn">
+                <input type="button" class="btn__encriptar" value="Encriptar" >
+                <input type="button" class="btn__desencriptar" value="Desencriptar">
+                <input type="image" src="imagenes/papelera.png" class="btn__limpiar" alt="Papelera">
+            </div>
+        </section>
+        <section class="presentacion">
+            <div class="presentacion__inicio">
+                <img src="imagenes/Muñeco.png" class="imagen__munieco" alt="Imagen del Muñeco">
+                <div class="presentacion__contenido">
+                    <h3 class="presentacion__titulo">Ningun mensaje fue encontrado</h3>
+                    <p class="presentacion__texto">Ingresa el texto que desea Encriptar y desencriptar</p>
+                </div>
+            </div>
+            <div class="presentacion__resultado">
+                <textarea class="evaluar" readonly></textarea>
+                <input type="submit" class="btn__copiar" value="Copiar">
+            </div>              
+        </section>
+    </main>
+    <footer>
+        <p class="pie__pagina">&copy; copyright 2024 - Encriptador de texto - Desarrollado por Jhosis</p>
+        <div>
+            <a href="https://github.com/Ben-JT" class="links" target="_blank">
+                <img src="./imagenes/github.svg" alt="Icono de Github">
+            </a>
+            <a href="https://www.linkedin.com/in/jhosis-curasma-de-la-cruz-8b02b9314/" class="links" target="_blank">
+                <img src="./imagenes/linkedin.svg" alt="Icono de linkedit">
+            </a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

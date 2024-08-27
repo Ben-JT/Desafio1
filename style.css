@@ -1,0 +1,324 @@
+        /* --- TIPOGRAFIA --- */  
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+        /* --- COLORES --- */  
+    --color-primario: #495057;
+    --color-secundario: #0A3871;
+    --color-terciario: #F6F6F6;
+    --color-fuente: #F3F5FC;
+    --color-hover: #508C9B;
+    /* --- FUENTES --- */    
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "krona One", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fuente);
+
+}
+
+header {
+    margin: 2.5rem 2.5rem 0 2.5rem;
+}
+
+.logo {
+    width: 7.5rem;
+    height: 3rem;
+}
+
+.titulo__elementos {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.titulo__texto {
+    margin: auto;
+    font-family: var(--fuente-krona);
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 12%;
+}
+
+.encriptador {
+    width: 100%;
+    max-width: 43rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.encriptador__texto {
+    height: 55vh;
+    width: 100%;
+    max-width: 43rem;
+    border-color: transparent;
+    border-radius: 1rem;
+    outline: none;
+    resize: none;
+    font-family: var(--fuente-montserrat);
+    font-size: 2rem;
+    color: var(--color-secundario);
+    overflow: auto;
+    line-height: 3rem;
+}
+
+::placeholder {
+    color: var(--color-secundario);
+}
+
+.encriptador__aviso {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.texto__aviso {
+    font-family: var(--fuente-montserrat);
+    font-size: 0.75rem;
+    opacity: 0.8;
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+.encriptador__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn__encriptar {
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    color: var(--color-terciario);
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    cursor: pointer;      
+}
+
+.btn__desencriptar {
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    color: var(--color-secundario);
+    background-color: transparent;
+    border: 1px solid var(--color-secundario);  
+    cursor: pointer;    
+}
+
+.btn__limpiar {
+    filter: drop-shadow(0.1rem 0 0rem #0007) ;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    max-width: 25rem;
+    width: 30%;
+}
+
+.presentacion__inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.imagen__munieco {
+    width: 100%;
+}
+
+.presentacion__contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--fuente-montserrat);
+    text-align: center;
+}
+
+.presentacion__texto {
+    font-size: 1rem;
+}
+
+
+.presentacion__resultado {
+    width: 100%;
+    height: 100%;
+    padding: 2% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.evaluar {
+    height: 100%;
+    width: 100%;
+    border-color: transparent;
+    border-radius: 12px;
+    outline: none;
+    resize: none;
+    font-family: var(--fuente-montserrat);
+    font-size: 32px;
+    color: var(--color-secundario);
+    overflow: auto;
+    line-height: 3rem;
+}
+
+
+.btn__copiar {
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    color: var(--color-secundario);
+    background-color: transparent;
+    border: 1px solid var(--color-secundario);  
+    cursor: pointer;    
+}
+
+
+.ocultar {
+    display: none;
+}
+
+
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--fuente-krona);
+    font-size: 1.2rem;
+    border-top: 0.125rem solid #0372;
+}
+
+.logo:hover {
+    color: var(--color-secundario);
+    opacity: 0.6;
+}
+
+.btn__encriptar:hover {
+    color: var(--color-fuente);
+    opacity: 0.6;
+}
+
+.btn__desencriptar:hover {
+    background-color: var(--color-fuente);
+    opacity: 0.6;
+}
+
+.btn__copiar:hover {
+    background-color: var(--color-fuente);
+    opacity: 0.6;
+}
+
+.links:hover {
+    color: var(--color-hover);
+    opacity: 0.6;
+}
+
+.btn__limpiar:hover {
+    color: var(--color-hover);
+    opacity: 0.6;
+}
+
+@media (max-width:1200px) {
+    .header {
+        padding: 10%;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .presentacion {
+        width: 100%;
+    }
+    .imagen__munieco {
+        display: none;
+    }
+    .pie__pagina {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:760px) {
+    header {
+        margin: 1rem 1rem 1rem 0;
+    }
+    .titulo__elementos {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 6rem;
+        height: 3rem;
+    }
+
+    .titulo__texto {
+        text-align: center;
+        font-size: 2rem;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .encriptador__texto {
+        font-size: 1.5rem;
+    }
+
+    .presentacion {
+        width: 100%;
+    }
+    .encriptador__btn{
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .imagen__munieco {
+        display: none;
+    }
+    .pie__pagina {
+        text-align: center;
+    }
+
+}
